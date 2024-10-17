@@ -1,0 +1,70 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>projeto com Tinkercad – SEMAFORO SIMPLES</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">principal</a>
+        <br>
+        <a href="projetotinkercad.html">projeto com Tinkercad</a>
+        <br>
+        <a href="arduinopratica.html">semaforo simples com arduino</a>
+        <br>
+        <a href="tinkercadduplo.html">semaforo duplo Tinkercad</a>
+        <br>
+        <a href="arduinoduplo.html">semaforo duplo com arduino</a>
+        <br>
+        <a href="crescente.html">contador crescente</a>
+        <br>
+        <a href="decrescente.html">contador decrescente</a>
+        <br>
+        <a href="projeto.html">decrescente com semaforo duplo</a>
+        <nav>
+        <br>
+    <h1>Semáforo Simples</h1>
+    <br>
+    <h1>circuito projeto</h1>
+    <br>
+    <div>
+        <img src="semforosimples.jpg" alt="">
+        <br>
+        <small>Fonte: O autor</small>
+    </div>
+    <br>
+    <h1> projeto no tinkercad (diagrama de blocos)</h1>
+    <br>
+    <div>
+        <img src="blocos.jpg" alt="">
+        <br>
+        <small>Fonte:</small>
+        <a href="https://www.tinkercad.com/dashboard">Tinkercad</a>
+    </div>
+    <h1> Código C++ </h1>
+    <br>
+    <pre>// C++ code
+        //
+        void setup()
+        {
+          pinMode(12, OUTPUT);
+          pinMode(8, OUTPUT);
+          pinMode(4, OUTPUT);
+        }
+        
+        void loop()
+        {
+          digitalWrite(12, HIGH);
+          delay(5000); // Wait for 5000 millisecond(s)
+          digitalWrite(12, LOW);
+          delay(2000); // Wait for 2000 millisecond(s)
+          digitalWrite(8, HIGH);
+          delay(5000); // Wait for 5000 millisecond(s)
+          digitalWrite(8, LOW);
+          delay(2000); // Wait for 2000 millisecond(s)
+          digitalWrite(4, HIGH);
+          delay(5000); // Wait for 5000 millisecond(s)
+          digitalWrite(4, LOW);
+          delay(1); // Wait for 1 millisecond(s)
+        }</pre>
